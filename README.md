@@ -44,8 +44,6 @@ aleatorio entre 1 y 100. Deben tener en cuenta la tentativa anterior, si fue
 
 **_¡Diviértete construyendo tu juego de adivinanza de números! 🎲🎮_**
 
-- [Versión en Python](./docs/README-python.md)
-- [Versión en Java](./docs/README-java.md)
 - [Versión en C#](./docs/README-csharp.md)
 
 ## 3. Objetivos de Aprendizaje
