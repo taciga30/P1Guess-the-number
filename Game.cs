@@ -42,7 +42,7 @@ namespace P1Guess_the_number
 
                         Console.WriteLine($"¡Felicitaciones! 🎉 Has adivinado el número en {i} intento");
                     }
-                    
+
                     break;
                 }
                 else if (numPlayer > numRandom && intentos != 0)
@@ -79,18 +79,17 @@ namespace P1Guess_the_number
                 }
             }
         }
+
+        // public playAgain()
+        // {
+        //     Console.WriteLine($"¿{nombre} quieres jugar de nuevo?(Y/N)");
+        //         Console.ReadKey(true);
+        // }
         public Game(Player player)
         {
             _player = player;
         }
 
     }
-
-    // public static string PlayReload (string)
-    // {
-    //     Console.WriteLine($"¿{nombre} quieres jugar de nuevo?(Y/N)");
-    //         Console.ReadKey(true);
-    //     if()
-    // } 
 
 }

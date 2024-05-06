@@ -12,6 +12,7 @@
 
             Game game = new Game(newPlayer);
             game.Start();
+            // game.playAgain();
 
             Console.WriteLine("Presiona una tecla para salir...");
             Console.ReadKey(true);
