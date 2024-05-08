@@ -1,81 +1,84 @@
 namespace P1Guess_the_number
 {
-
     class Game
     {
-        public Player _player;
-        public static int GeneratedRandom()
+        private Player _player;
+        private int TargetNumber;
+        private string numTry;
+        private int RandomNumberGenerator()
         {
             Random numRandom = new Random();
             //Genera un numero entre 1 y 100 (101 no se incluye)
-            return numRandom.Next(1, 101);
+            TargetNumber = numRandom.Next(1, 101);
+            return TargetNumber;
         }
+
         public void Start()
         {
-            int numRandom = GeneratedRandom();
-            Console.WriteLine(numRandom);
+            
+            Console.WriteLine(TargetNumber);
             Console.WriteLine("⇩");
             Console.WriteLine($"Bienvenida al juego del mentalista {_player._namePlayer}. Deberás adivinar un número entre 1 y 100");
 
             Console.WriteLine("¿Cuántos intentos quieres para poder adivinar el número?");
-            var numTry = Console.ReadLine();
+            numTry = Console.ReadLine();
 
             Console.WriteLine($"Perfecto! Tendrás {numTry} oportunidades para lograr descubir el número correcto.");
             Console.WriteLine("¡Empecemos!...Intenta adivinar el número");
             Console.WriteLine("⇩");
 
+            CheckGuess();
+        }
+        
+        // Agrega un método privado que nos va a permitir validar la predicción (CheckGuess(int guess, int targetNumber)).
+        private void CheckGuess()
+        {
             for (int i = 1; i < (Int32.Parse(numTry)) + 1; i++)
             {
-                int numPlayer = Player.MakeGuess();
+                int guess = Player.MakeGuess();
+                int numPlayer = Player.GetLastGuess();
                 int intentos = Int32.Parse(numTry) - i;
 
-                if (numPlayer == numRandom)
+                if (numPlayer == TargetNumber)
                 {
                     Console.WriteLine("⇩");
                     if (i != 1)
                     {
-
                         Console.WriteLine($"¡Felicitaciones! 🎉 Has adivinado el número en {i} intentos");
                     }
                     else
                     {
-
                         Console.WriteLine($"¡Felicitaciones! 🎉 Has adivinado el número en {i} intento");
                     }
-
                     break;
                 }
-                else if (numPlayer > numRandom && intentos != 0)
+                else if (numPlayer > TargetNumber && intentos != 0)
                 {
-
                     if (intentos != 1)
                     {
-
                         Console.WriteLine($"El número es menor, te quedan {intentos} intentos");
                     }
                     else
                     {
-
                         Console.WriteLine($"El número es menor, te queda {intentos} intento");
                     }
                 }
-                else if (numPlayer < numRandom && intentos != 0)
+                else if (numPlayer < TargetNumber && intentos != 0)
                 {
                     if (intentos != 1)
                     {
-
                         Console.WriteLine($"El número es mayor, te quedan {intentos} intentos");
                     }
                     else
                     {
-
                         Console.WriteLine($"El número es mayor, te queda {intentos} intento");
                     }
                 }
-                if (numPlayer != numRandom && intentos == 0)
+                
+                else if (numPlayer != TargetNumber && intentos == 0)
                 {
                     Console.WriteLine("⇩");
-                    Console.WriteLine($"Perdiste 😢, el número era {numRandom}.");
+                    Console.WriteLine($"Perdiste 😢, el número era {TargetNumber}.");
                 }
             }
         }
@@ -88,8 +91,7 @@ namespace P1Guess_the_number
         public Game(Player player)
         {
             _player = player;
+            RandomNumberGenerator();
         }
-
     }
-
 }
