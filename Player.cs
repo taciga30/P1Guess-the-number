@@ -4,15 +4,12 @@ class Player
 {
     public string _namePlayer;
     public int _assumptions;
-    
-
 
     public static int MakeGuess()
     {
         Console.WriteLine("→ Ingresa el número:");
             var numPlayer = Console.ReadLine();
             return (Int32.Parse(numPlayer));
-       
     }
 
     public Player(string namePlayer)

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("P1Guess-the-number")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1d562d473d39834c46aeec7a3119a1f34764cc0c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9999b9c4072d83e782fc91c2e9a9519a68353f2e")]
 [assembly: System.Reflection.AssemblyProductAttribute("P1Guess-the-number")]
 [assembly: System.Reflection.AssemblyTitleAttribute("P1Guess-the-number")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

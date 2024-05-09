@@ -14,8 +14,8 @@
             game.Start();
             // game.playAgain();
 
-            Console.WriteLine("Presiona una tecla para salir...");
-            Console.ReadKey(true);
+            // Console.WriteLine("Presiona una tecla para salir...");
+            // Console.ReadKey(true);
         }
     }
 }
