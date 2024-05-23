@@ -1,16 +1,11 @@
 namespace P1Guess_the_number
 {
-class Player
+abstract class Player
 {
     public string _namePlayer;
     public int _assumptions;
 
-    public static int MakeGuess()
-    {
-        Console.WriteLine("→ Ingresa el número:");
-            var numPlayer = Console.ReadLine();
-            return (Int32.Parse(numPlayer));
-    }
+    public abstract int MakeGuess();
 
     public Player(string namePlayer)
     {
