@@ -16,15 +16,17 @@ namespace P1Guess_the_number
             //Genera un numero entre 1 y 100 (101 no se incluye)
             return numRandom.Next(1, 101);
         }
-        public void SetPlayer(Player humanPlayer)
-        {
-            _humanPlayer = humanPlayer;
-        }
 
-        public void SetOpponent(Player AIPlayer)
-        {
-            _AIPlayer = AIPlayer;
-        }
+        // El constructor deberia bastar para setear estas propiedades, aunque se puede tener métodos aparte y llamarlos en el constructor es un poquito redundante
+        // public void SetPlayer(Player humanPlayer)
+        // {
+        //     _humanPlayer = humanPlayer;
+        // }
+
+        // public void SetOpponent(Player AIPlayer)
+        // {
+        //     _AIPlayer = AIPlayer;
+        // }
 
         public void SetNumberOfAttempts(int numTry)
         {

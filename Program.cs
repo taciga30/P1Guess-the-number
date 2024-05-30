@@ -13,15 +13,17 @@
                 var numTry = GetNumberOfAttempts();
                 // Turno del jugador
                 var humanPlayer = new HumanPlayer(namePlayer);
-                var gameWithHuman = new Game(humanPlayer);
+                var aiPlayer = new AIPlayer("AI");
+                //estabas generando dos jugadores correctamente pero Game necesita como argumentos al jugador y a la IAP´layer como argumentos
+                var gameWithHuman = new Game(humanPlayer, aiPlayer);
                 gameWithHuman.SetNumberOfAttempts(numTry);
                 gameWithHuman.Start();
 
                 // Turno de la IA
-                var aiPlayer = new AIPlayer("AI");
-                var gameWithAI = new Game(aiPlayer);
-                gameWithAI.SetNumberOfAttempts(numTry);
-                gameWithAI.Start();
+                
+                // var gameWithAI = new Game(aiPlayer);
+                // gameWithAI.SetNumberOfAttempts(numTry);
+                // gameWithAI.Start();
 
                 Console.WriteLine("¿Quieres jugar de nuevo? (Y/N)");
             }
