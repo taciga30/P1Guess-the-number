@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tacig\\OneDrive\\TATIS\\Documentos\\Tatis\\Educación\\Cursos y Capacitaciones\\Laboratoria\\Upskilling C#\\Proyectos\\P1Guess-the-number\\P1Guess-the-number.csproj": {}
+    "C:\\Users\\User\\Desktop\\P1Guess-the-number\\P1Guess-the-number.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tacig\\OneDrive\\TATIS\\Documentos\\Tatis\\Educación\\Cursos y Capacitaciones\\Laboratoria\\Upskilling C#\\Proyectos\\P1Guess-the-number\\P1Guess-the-number.csproj": {
+    "C:\\Users\\User\\Desktop\\P1Guess-the-number\\P1Guess-the-number.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tacig\\OneDrive\\TATIS\\Documentos\\Tatis\\Educación\\Cursos y Capacitaciones\\Laboratoria\\Upskilling C#\\Proyectos\\P1Guess-the-number\\P1Guess-the-number.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\P1Guess-the-number\\P1Guess-the-number.csproj",
         "projectName": "P1Guess-the-number",
-        "projectPath": "C:\\Users\\tacig\\OneDrive\\TATIS\\Documentos\\Tatis\\Educación\\Cursos y Capacitaciones\\Laboratoria\\Upskilling C#\\Proyectos\\P1Guess-the-number\\P1Guess-the-number.csproj",
-        "packagesPath": "C:\\Users\\tacig\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tacig\\OneDrive\\TATIS\\Documentos\\Tatis\\Educación\\Cursos y Capacitaciones\\Laboratoria\\Upskilling C#\\Proyectos\\P1Guess-the-number\\obj\\",
+        "projectPath": "C:\\Users\\User\\Desktop\\P1Guess-the-number\\P1Guess-the-number.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\P1Guess-the-number\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tacig\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -32,11 +34,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -58,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
